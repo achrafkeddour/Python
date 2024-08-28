@@ -19,12 +19,11 @@ print("my age is "+ str(age)) # and not print("my age is "+ age) (concatenation 
 floatnum = 25.2 ; print (floatnum) #25.2
 print(type(floatnum)) #<class 'float'>
 
-more_than_18 = False #or True
-
-if more_than_18:
-    print("you are welcome") #if true
+naame = (input("enter your name: "))
+if bool(naame): #True if name exits and False it not
+    print(f"you are welcome {naame}")
 else: 
-    print("sorry ") #if false
+    print("please enter a name ")
   
 #4 string methods   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 nom = "narUto sho "
@@ -63,6 +62,5 @@ print(f"hello {ism}, you are {age} years old , your height is {height} cm ")
 age = 30
 name = "john" 
 print(f"Hello {name} you are {age} years old.")
-
 
 
