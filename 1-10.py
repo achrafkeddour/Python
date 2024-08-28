@@ -57,5 +57,7 @@ print("your height is " + str(height) +" cm")
 
 
 
-
-
+#The f before the string tells Python to look for expressions inside {} and replace them with their values.
+age = 30
+name = "john" 
+print(f"{name} is {age} years old.")
