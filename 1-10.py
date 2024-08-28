@@ -23,7 +23,7 @@ print("my age is "+ str(age)) # and not print("my age is "+ age) (concatenation 
 floatnum = 25.2 ; print (floatnum) #25.2
 print(type(floatnum)) #<class 'float'>
 
-#4 string methods   ----------------------------------------------------------------------------------------------------------------------------------------------------------
+#4 string methods   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 nom = "narUto sho "
 print(len(nom)) #length
 print(nom.find("o")) #only the index of the first o
@@ -36,3 +36,17 @@ print(nom.count("o")) # it's 2
 print(nom.replace("o","A")) 
 nom = nom.replace("o","A")
 print(nom*5)
+
+#5 type cast : str() , int() ,  float()  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+x = 3; p = 120.165
+x = float(x) ; p = int(p)
+print(x) #3.0
+print(p) #120
+
+#anything i wanna print with a sentence must be inside str()
+#print ("X is : "+ x) ..Error
+print ("X is : "+ str(x)) #true one
+
+
+
+
