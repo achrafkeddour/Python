@@ -63,4 +63,13 @@ age = 30
 name = "john" 
 print(f"Hello {name} you are {age} years old.")
 
+#6 math --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import math
+t = 9.9
+print(math.pi) #3.141592653589793
+print(math.e) #2.718281828459045
+print(math.ceil(t)) #10
+print(math.floor(t)) #9
+print(math.sqrt(9)) #3.0
+print(round(math.e ,2)) #2.72
 
