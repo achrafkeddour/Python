@@ -1,4 +1,4 @@
-#1 variables ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#2 variables ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 name = "achraf" ; last_name = "kdr" ; age = 21 ; b = True 
 # same as :     name , last_name , age , b = "achraf" , "kdr" , 21 , True
@@ -23,3 +23,16 @@ print("my age is "+ str(age)) # and not print("my age is "+ age) (concatenation 
 floatnum = 25.2 ; print (floatnum) #25.2
 print(type(floatnum)) #<class 'float'>
 
+#4 string methods   ----------------------------------------------------------------------------------------------------------------------------------------------------------
+nom = "narUto sho "
+print(len(nom)) #length
+print(nom.find("o")) #only the index of the first o
+print(nom.capitalize()) 
+print(nom.upper())
+print(nom.lower())
+print(nom.isdigit()) #true if nom = "123"
+print(nom.isalpha()) #true if there is no space .. only strings (koulech lase9)
+print(nom.count("o")) # it's 2
+print(nom.replace("o","A")) 
+nom = nom.replace("o","A")
+print(nom*5)
