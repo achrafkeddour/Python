@@ -2,12 +2,10 @@
 
 name = "achraf" ; last_name = "kdr" ; age = 21 ; b = True 
 # same as :     name , last_name , age , b = "achraf" , "kdr" , 21 , True
-
 print("my name is " + name) #it gives : my name is achraf 
 print(type(name)) # it gives <class 'str'>
 print(type(age))  #it gives <class 'int'>
 print(type(b))     #it gives <class 'bool'>
-
 full_name = name + " " + last_name
 print(full_name) # achraf kdr
 
@@ -16,13 +14,18 @@ name1 = name + "1"
 print(name1) #achraf1
 age = age +1
 print(age) #22 and not 21
-
 print("my age is "+ str(age)) # and not print("my age is "+ age) (concatenation is for str)
-
 #float is a decimal number 
 floatnum = 25.2 ; print (floatnum) #25.2
 print(type(floatnum)) #<class 'float'>
 
+more_than_18 = False #or True
+
+if more_than_18:
+    print("you are welcome") #if true
+else: 
+    print("sorry ") #if false
+  
 #4 string methods   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 nom = "narUto sho "
 print(len(nom)) #length
@@ -46,7 +49,7 @@ print(p) #120
 #print ("X is : "+ x) ..Error
 print ("X is : "+ str(x)) #true one
 
-#6 user input ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#4 user input ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ism = input(" what is your name please ") #i will accept it as a string by default
 age = int(input("how old are you ")) # value entered by the user must be an integer
 height = float(input("what is your height ")) # value can be integer or float (because every int is a float , 44 = 44.0)
@@ -54,10 +57,12 @@ print("\n")
 print("hello "+ ism)
 print("you are " +str(age)+" years old" ) 
 print("your height is " + str(height) +" cm")
-
-
+print(f"hello {ism}, you are {age} years old , your height is {height} cm ") 
 
 #The f before the string tells Python to look for expressions inside {} and replace them with their values.
 age = 30
 name = "john" 
-print(f"{name} is {age} years old.")
+print(f"Hello {name} you are {age} years old.")
+
+
+
