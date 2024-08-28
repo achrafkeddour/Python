@@ -42,10 +42,19 @@ x = 3; p = 120.165
 x = float(x) ; p = int(p)
 print(x) #3.0
 print(p) #120
-
 #anything i wanna print with a sentence must be inside str()
 #print ("X is : "+ x) ..Error
 print ("X is : "+ str(x)) #true one
+
+#6 user input ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ism = input(" what is your name please ") #i will accept it as a string by default
+age = int(input("how old are you ")) # value entered by the user must be an integer
+height = float(input("what is your height ")) # value can be integer or float (because every int is a float , 44 = 44.0)
+print("\n")
+print("hello "+ ism)
+print("you are " +str(age)+" years old" ) 
+print("your height is " + str(height) +" cm")
+
 
 
 
