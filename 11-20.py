@@ -7,9 +7,12 @@ else :
 #you are not a studnet
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #12, conditional expressions : 'Action1 if condition else Action2' 
-age = 19
-print("Adult" if age >= 18 else "child")
 access_level = "admin" #i can change it
 print("full_access" if access_level == "admin" else "limited access")
 a = 12 ; b = 5
 print(f"the maximun is {a if a > b else b}")
+
+#another example 
+temperature = float(input("enter the temperature today : "))
+is_sunny = "it is sunny today" if temperature > 23 else "it is not sunny be carefull bro"
+print(is_sunny)
