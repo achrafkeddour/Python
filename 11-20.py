@@ -102,3 +102,27 @@ while i < 10 :
     t = float(input(f"enter the {i}(th) : "))
     print(f"you entered {t} ! good")
     i +=1
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#18 for loops
+for x in range(20,100,5):
+    print(x) #result from 20 to 100 (step is 5)
+print("----------------------------------------------------")
+for x in reversed(range(20,30)):
+    print(x)
+
+something = "hello everyone"
+for i in reversed(something) :
+    print(i)
+
+mylist = ['achraf','second' , 'third','brocode']
+for i in mylist:
+    print(i)
+
+#other example
+for i in range(1,9):
+    if i == 5: #sauter
+        continue
+    elif i ==7: #stop at 6
+        break
+    else:
+        print(i)
