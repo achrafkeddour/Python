@@ -23,4 +23,46 @@ print(f"a has appeared {num_of_a} times")
 
 newname = value.replace("a","")
 print(f"if we deleted it, we'll have : {newname}")
---------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#14 #indexing [start : end : step]
+ach = "hello everyone"
+print(ach[2]) #l
+print(ach[1:8]) #ello ev (only from 1 to 7) (the last mafihach)
+# print(ach[:4]) same result as print(ach[0:4]) start from the beginnig to 3
+print(ach[4:]) #o everyone from the fifth (5) letter to the end
+#print(ach[start : end : step])
+print(ach[::3]) #hlern (ysoti b 3 steps)
+
+#megative indexes means starting from the last 
+#-1 the last one ; -2 before the last one ; -3 the third last one
+print(ach[-4]) #y
+
+credit_num = "1234-5678-9012-3456" #i must have string not int
+
+lastdegits = credit_num[-4:]
+print(F" your credit num is : XXXX-XXXX-XXXX-{lastdegits}")
+
+inverse_num = credit_num[::-1]
+print(f"the inverse is {inverse_num}")
+
+same = ach[::]
+print(same)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#15 : format spicifiers {x:flags}
+import math 
+
+p = math.pi 
+a =2222222.56585
+n = -10012.45
+print(f"{p:.2f}") #.Nf : Round to N decimal places (fixed point). 
+print(f"{p:40}") #:(N) : Allocate N spaces (default is right-justified). '                       3.141592653589793'
+print(f"{p:040}")                                                      # '000000000000000000000003.141592653589793'
+print(f"{a:,}") #2,222,222.56585
+print(f"{p:+}")
+print(f"{n:+}") # :+ : shows the sign (whatever it is + or -)
+print(f"{a:<030,}") #2,222,222.56585000000000000000      justify left
+print(f"{a:>030,}") #0000000000000002,222,222.56585      justify right
+print(f"{a:^030}") #000000002222222.56585000000000       center align
+print(f"{a:=030,}") #0,000,000,000,002,222,222.56585
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
