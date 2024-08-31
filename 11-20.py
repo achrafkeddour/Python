@@ -65,4 +65,40 @@ print(f"{a:>030,}") #0000000000000002,222,222.56585      justify right
 print(f"{a:^030}") #000000002222222.56585000000000       center align
 print(f"{a:=030,}") #0,000,000,000,002,222,222.56585
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#16 while
+nom = ""
+while nom == "" :
+    nom = input("please enter your name : ")
+print(f"Hello {nom}") 
+
+#2nd example
+age = int(input("how old are you ? "))
+while age <0 :
+    print("age can't be negative")
+    age = int(input("how old are you ? "))
+
+print(f"you are {age} !")
+
+#3rd example
+food = input("please enter you fav food ")
+while not food == "q":
+    print(f"{food} is a good choice")
+    food = input("please enter another fav food (q to quit)") 
+
+print("bye")
+
+#4th example
+num = float(input("enter a number between 1 and 20 : "))
+
+while num < 1 or num > 20 :
+    print(f"\n{num} is not valid \n")
+    num = float(input("a num between 1 & 20 : "))
+print(f"i like it {num}")
+
+#5th example
+i = 0
+while i < 10 :
+    t = float(input(f"enter the {i}(th) : "))
+    print(f"you entered {t} ! good")
+    i +=1
