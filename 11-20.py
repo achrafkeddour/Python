@@ -126,3 +126,27 @@ for i in range(1,9):
         break
     else:
         print(i)
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#20 nested loops 
+mylist = ['blue','red','yellow','white']
+
+for y in range(1,10):
+    for x in mylist:
+        print(f"{y} - {x}   ",end='|') # number - colors
+    
+    print()# by default end='\n'
+
+print("\n------------------------------------------------------------\n")
+
+
+for y in range(10):
+    for x in range(4):
+        print('$',end=' ')
+
+print("\n------------------------------------------------------------\n")
+
+for y in range(10):
+    for x in range(4):
+        print('$',end=' ')
+    print()
