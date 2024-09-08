@@ -30,4 +30,15 @@ for question in questions:
         print(f"INCORRECT , the correct answer is {answers[i]}\n")
     i+=1
 
-print(f"your final score {score}")
+print("------------------------------------------------------")
+
+print("Guesses : ")
+for guess in guesses:
+    print(guess)
+
+print("Answers :")
+for answer in answers:
+    print(answer)
+
+
+print(f"your final score {score}/5")
