@@ -48,7 +48,7 @@ async def handle_message(update: Update, context):
 # 7. Main function to run the bot
 def main():
     # Get your bot token from BotFather
-    bot_token = '7419571474:AAFqIRpa0Z4Kvetbrrvu105SAqKc015NeFM'
+    bot_token = 'something'
 
     # Create Application instance
     app = ApplicationBuilder().token(bot_token).build()
