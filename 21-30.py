@@ -3,6 +3,16 @@
 # tuple = () , ordered
 # set = {} , unordered  , you can not change values
 
+#What Does "Mutable" Mean?
+
+#    Mutable means you can change the object after it’s created—add, remove, or modify its elements.
+#    Immutable means once it’s created, it’s locked; you can’t change it.
+
+#What Does "Ordered" Mean?
+
+#    Ordered means the items have a specific, predictable sequence, and you can access them by their position (like item[0] for the first item).
+#    Unordered means there’s no guaranteed sequence, and you can’t rely on positions.
+
 #lists 
 mylist = ["apple", "orange","banana", "ak"]
 
